@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Apps = () => {
   return (
     <div className="pb-80 text-white">
