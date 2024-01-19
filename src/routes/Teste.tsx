@@ -1,5 +1,4 @@
 // components
-import Hero from "../components/Index/Hero"
 import whatsApp from '../assets/img/icons/whatsapp.png'
 import { Link } from 'react-router-dom'
 import YourIdeaCut from '../assets/img/yourIdea-cut.jpg'

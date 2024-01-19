@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSpring, animated } from '@react-spring/web'
 import YourIdea from '../assets/img/yourIdea-cut.jpg'
 import Interface from '../assets/img/Interface-sky-700.jpg'

@@ -1,4 +1,3 @@
-import React from 'react'
 import WebDev from '../assets/img/WebDeveloping-sky700-neutral950.jpg'
 import { useSpring, animated } from '@react-spring/web'
 
