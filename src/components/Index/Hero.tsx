@@ -1,14 +1,29 @@
 import { Link } from 'react-router-dom'
 import YourIdeaCut from '../../assets/img/yourIdea-cut.jpg'
 import YourIdea from '../../assets/img/yourIdea-cut.jpg'
+import { useSpring, animated } from "@react-spring/web"
+
 
 
 
 const Hero = () => {
+
+    const LeftSide: any = useSpring({
+        from: { opacity: 0, x: 50 },
+        to: { opacity: 1, x: 0 },
+        config: { duration: 400 },
+    })
+
+    const RightSide: any = useSpring({
+        from: { opacity: 0, x: -50 },
+        to: { opacity: 1, x: 0 },
+        config: { duration: 400 },
+    }) 
+
   return (
     <div className="py-4 px-4 ">
         <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="col-span-1">
+            <animated.div style={{...LeftSide}} className="col-span-1">
                 <div className="md:py-24">
                     <p className="hidden md:block text-center md:text-left text-xl font-extrabold md:text-xl text-white py-0 md:py-0 fade-in-element first-element
                     ">MARCELO ZUZA <span className='text-sky-600'>WEB & MOBILE</span></p>
@@ -29,11 +44,11 @@ const Hero = () => {
 
 
                 </div>
-            </div>
-            <div className="hidden md:block">
+            </animated.div>
+            <animated.div style={{...RightSide}} className="hidden cols-span-1 md:flex flex-1 justify-center">
                  {/*<Carousel />*/}
-                <img src={YourIdea} alt="youridea" />
-            </div>
+                <img src={YourIdea} className='bg-black h-3/4' alt="youridea" />
+            </animated.div>
 
             <div className="cols-span-1 grid place-items-center -mt-10 md:hidden">
                 <img className="h-3/4" src={YourIdeaCut} alt="" />
