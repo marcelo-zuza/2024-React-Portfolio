@@ -9,16 +9,22 @@ import { useSpring, animated } from "@react-spring/web"
 const Hero = () => {
 
     const LeftSide: any = useSpring({
-        from: { opacity: 0, x: 50 },
+        from: { opacity: 0, x: -1500 },
         to: { opacity: 1, x: 0 },
-        config: { duration: 400 },
+        config: { duration: 600 },
     })
 
     const RightSide: any = useSpring({
-        from: { opacity: 0, x: -50 },
+        from: { opacity: 0, x: 1500 },
         to: { opacity: 1, x: 0 },
-        config: { duration: 400 },
-    }) 
+        config: { duration: 600 },
+    })
+    
+    const DownUp: any = useSpring({
+        from: { opacity: 0, y: 500 },
+        to: { opacity: 1, y: 0 },
+        config: { duration: 600 },
+    })
 
   return (
     <div className="py-4 px-4 ">
@@ -41,8 +47,6 @@ const Hero = () => {
                             <a href="/about" className="bg-sky-600 border-1 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">Conheça mais</a>
                         </div>
                     </div>
-
-
                 </div>
             </animated.div>
             <animated.div style={{...RightSide}} className="hidden cols-span-1 md:flex flex-1 justify-center">
@@ -50,17 +54,17 @@ const Hero = () => {
                 <img src={YourIdea} className='bg-black h-3/4' alt="youridea" />
             </animated.div>
 
-            <div className="cols-span-1 grid place-items-center -mt-10 md:hidden">
+            <animated.div style={{...DownUp}} className="cols-span-1 grid place-items-center -mt-10 md:hidden">
                 <img className="h-3/4" src={YourIdeaCut} alt="" />
-            </div>
+            </animated.div>
 
-            <div className="grid grid-rows-2 md:hidden place-items-center pt-4 -mt-14">
+            <animated.div style={{...DownUp}} className="grid grid-rows-2 md:hidden place-items-center pt-4 -mt-14">
                 <div className="row-span-1 pb-3">
                     <p className="block md:hidden text-center md:text-left text-xl font-extrabold md:text-xl text-white py-0 -mb-2 md:py-0">MARCELO ZUZA</p>
                     <p className="block md:hidden text-center md:text-left text-xl font-extrabold md:text-xl text-white py-0 -mb-2 md:py-0">WEB & MOBILE</p>
                 </div>
                 <Link to="/about" className="bg-sky-600 text-white py-4 px-4 rounded-full border-white">Conheça mais</Link>
-            </div>
+            </animated.div>
         </div>
       
     </div>
