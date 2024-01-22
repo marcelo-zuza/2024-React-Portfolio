@@ -4,7 +4,6 @@ import { useState } from "react"
 import Logo from '../assets/img/logo-neutral900-cut.jpg'
 import GHLogo from '../assets/img/icons/github.png'
 import Menu from '../assets/img/menu.png'
-import { useSpring, animated } from "@react-spring/web"
 
 
 
@@ -20,11 +19,6 @@ const NavBar = () => {
         }
     }
 
-    const animateMenu = useSpring({
-        from: { height: 0 },
-        to: { height: 100 },
-        config: { duration: 3000 },
-    })
 
   return (
     <div className="py-0 md:px-4 bg-neutral-900">
@@ -52,7 +46,7 @@ const NavBar = () => {
                         <div className="flex flex-col">
                             <button onClick={openMenu} className="items-end"><img className="h-16 px-0" src={Menu} alt="fabar" /></button>
                             {open && (
-                                <animated.div>
+                                <div>
                                     <ul className="flex flex-col w-full justify-end content-center gap-4 text-white absolute top-20 left-4 bg-neutral-950">
                                         <li><Link onClick={openMenu} className="hover:underline duration-500" to="/">Home</Link></li>
                                         <li><Link onClick={openMenu} className="hover:underline duration-500" to="/about">Sobre</Link></li>
@@ -63,7 +57,7 @@ const NavBar = () => {
                                             <li><a href="https://github.com/marcelo-zuza" target="_blank" rel="noopener noreferrer"><img className="bg-white h-16 rounded-lg" src={GHLogo} alt="" /></a></li>
                                         </div>
                                     </ul>
-                                </animated.div>
+                                </div>
                             )}
                         </div>
 
