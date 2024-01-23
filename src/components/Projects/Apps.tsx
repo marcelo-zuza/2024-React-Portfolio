@@ -1,7 +1,30 @@
+import { useSpring, animated } from "@react-spring/web"
+
 const Apps = () => {
+
+  const LeftSide: any = useSpring({
+    from: { opacity: 0, x: -1500 },
+    to: { opacity: 1, x: 0 },
+    config: { duration: 800 },
+})
+
+// const RightSide: any = useSpring({
+//     from: { opacity: 0, x: 1500 },
+//     to: { opacity: 1, x: 0 },
+//     config: { duration: 800 },
+// })
+
   return (
-    <div className="pb-80 text-white">
-        <h1 className='text-5xl text-white text-center'>PROJETOS EM ANDAMENTO</h1>
+    <div className="md:grid grid-cols-1 md:grid-cols-2 py-4 gap-16 text-white">
+              <div className="py-4 md:py-4">
+                <animated.div style={{...LeftSide}}>
+                    <p className="text-2xl text-center py-4">Blog Público</p>
+                    <iframe className="w-full h-96 rounded-2xl" src="https://mz-public-blog.vercel.app/"></iframe>
+                    <div className="grid grid-cols-1 place-items-center">
+                        <a href="https://mz-public-blog.vercel.app/" className="bg-sky-600 mt-4 py-2 px-4 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-sky-600 duration-500 ">Visite o site</a>
+                    </div>
+                </animated.div>
+            </div>
     </div>
   )
 }

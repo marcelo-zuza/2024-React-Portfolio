@@ -29,8 +29,9 @@ const About = () => {
             <p className="text-4xl py-2">Faça parte desta Rede Mundial</p>
             <p className="text-base py-2"><span className="font-bold">Seja você um empreendedor que busca estabelecer sua presença online, uma empresa que deseja renovar seu site corporativo ou um indivíduo em busca de uma página pessoal impressionante,</span> estamos aqui para ajudar. Ofereço soluções sob medida que unem design moderno, funcionalidade eficiente e uma experiência do usuário excepcional.</p>
             <p className="text-base py-2">Juntos, vamos criar uma homepage que reflete sua visão e alcança seus objetivos online. Comece a sua jornada conosco e descubra como podemos fazer a diferença no mundo digital!</p>
-            <div className="py-4">
+            <div className="py-4 flex flex-col md:flex-row  md:gap-4 mx-24 md:mx-0">
                 <Link to="/aboutme" className="bg-sky-600 my-4 py-4 px-4 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">Sobre mim</Link>
+                <Link to="/services" className="bg-sky-600 my-4 py-4 px-4 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">Conheça meus serviços</Link>
             </div>
         </animated.div>
         <div className="fixed bottom-52 right-2 md:bottom-4 md:right-4 z-10">
