@@ -46,22 +46,22 @@ const Services = () => {
                 ">
                     <div className="col-span-1 rounded-full">
                         <animated.div style={{...secondBlock}} className="border-white border-2 px-8 py-4 my-4 rounded-xl text-center hover:bg-sky-600 duration-500 h-44">
-                            <p className="font-bold text-xl">Website Empresarial</p>
-                            <p>Coloque sua empresa na rede, divulgue serviços, esteja ao alcance de um click do seu cliente</p>
+                            <p className="font-bold text-xl">Business Website</p>
+                            <p>Put your company online, promote services, be just a click away from your customer</p>
                         </animated.div>
                         <animated.div style={{...firstBlock}} className="border-white border-2 px-8 py-4 my-4 rounded-xl text-center hover:bg-sky-600 duration-500 h-44">
                             <p className="font-bold text-xl">Landing page</p>
-                            <p>Promova seu produto, seu curso, seu pacote através de uma sofisticada página que mostrará detalhadamente o que será vendido</p>
+                            <p>Promote your product, your course, your package through a sophisticated page that will show in detail what will be sold</p>
                             </animated.div>   
                     </div>
                     <div className="col-span-1">
                         <animated.div style={{...fourthBlock}} className="border-white border-2 px-8 py-4 my-4 rounded-xl text-center hover:bg-sky-600 duration-500 h-44">
-                            <p className="font-bold text-xl">Portfólio Pessoal</p>
-                            <p>Tenha uma página pessoal aonde seu feitos e realizações como profissional ou artista serão divulgados</p>                     
+                            <p className="font-bold text-xl">Personal Portfolio</p>
+                            <p>Create a personal page where your accomplishments and achievements as a professional or artist will be showcased</p>                     
                             </animated.div>
                         <animated.div style={{...thirdBlock}} className="border-white border-2 px-8 py-4 my-4 rounded-xl text-center hover:bg-sky-600 duration-500 h-44">
                             <p className="font-bold text-xl">Blog Pessoal</p>
-                            <p>Crie um Blog postagens sobre seu tema predileto e divulgue seu conteúdo na rede</p>
+                            <p>Create a blog with posts about your favorite topic and share your content online</p>
                             </animated.div>
                     </div>
                 </div>

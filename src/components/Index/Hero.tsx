@@ -35,16 +35,16 @@ const Hero = () => {
                     ">MARCELO ZUZA <span className='text-sky-600'>WEB & MOBILE</span></p>
                     <div className="fade-in-element second-element  
                     ">
-                        <p className="text-center md:text-left text-4xl md:text-7xl text-white py-0 md:py-0">Transforme</p>
-                        <p className="text-center md:text-left text-4xl md:text-7xl text-white py-0 md:py-0">Seu Negócio em</p>
-                        <p className="text-center md:text-left text-4xl md:text-7xl text-sky-600 py-0 md:py-0">Realidade Digital</p>
+                        <p className="text-center md:text-left text-4xl md:text-7xl text-white py-0 md:py-0">Turn your</p>
+                        <p className="text-center md:text-left text-4xl md:text-7xl text-white py-0 md:py-0">business into a</p>
+                        <p className="text-center md:text-left text-4xl md:text-7xl text-sky-600 py-0 md:py-0">a digital reality.</p>
                     </div>
 
                     <div className=" fade-in-element third-element
                     ">
-                        <p className="text-center md:text-left text-lg md:text-2xl py-1 md:py-2 text-white">Coloque sua marca na Rede Mundial de Computadores </p>
+                        <p className="text-center md:text-left text-lg md:text-2xl py-1 md:py-2 text-white">Put your brand on the World Wide Web </p>
                         <div className="hidden md:flex flex-1 gap-6">
-                            <a href="/about" className="bg-sky-600 border-1 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">Conheça mais</a>
+                            <a href="/about" className="bg-sky-600 border-1 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">See more</a>
                         </div>
                     </div>
                 </div>
@@ -60,10 +60,10 @@ const Hero = () => {
 
             <animated.div style={{...DownUp}} className="grid grid-rows-2 md:hidden place-items-center pt-4 -mt-14">
                 <div className="row-span-1 pb-3">
-                    <p className="block md:hidden text-center md:text-left text-xl font-extrabold md:text-xl text-white py-0 -mb-2 md:py-0">MARCELO ZUZA</p>
-                    <p className="block md:hidden text-center md:text-left text-xl font-extrabold md:text-xl text-white py-0 -mb-2 md:py-0">WEB & MOBILE</p>
+                    <p className="block md:hidden text-center md:text-left text-2xl font-extrabold md:text-xl text-white py-0 -mb-2 md:py-0">MARCELO ZUZA</p>
+                    <p className="block md:hidden text-center md:text-left text-2xl font-extrabold md:text-xl text-white py-0 -mb-2 md:py-0">WEB & MOBILE</p>
                 </div>
-                <Link to="/about" className="bg-sky-600 text-white py-4 px-4 rounded-full border-white">Conheça mais</Link>
+                <Link to="/about" className="bg-sky-600 text-white py-4 px-4 rounded-full border-white">See more</Link>
             </animated.div>
         </div>
       

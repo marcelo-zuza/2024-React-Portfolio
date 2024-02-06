@@ -9,7 +9,7 @@ const Footer = () => {
             </div>
             <p className="text-white md:text-xl hover:underline duration-700"><a href="https://www.linkedin.com/company/marcelo-zuza-webdevelopment/"><span className="font-bold text-sky-600">MARCELO ZUZA</span></a></p>
             <p className="text-white md:text-xl hover:underline duration-700"><a href="https://www.linkedin.com/company/marcelo-zuza-webdevelopment/"><span className="font-bold text-sky-600">Web & Mobile</span></a></p>
-            <p className="text-base text-white">Todos os direitos reservados. <span className="font-bold">2024</span></p>
+            <p className="text-base text-white">&copy; 2024. All rights reserved  <span className="font-bold">2024</span></p>
         </div>
     </div>
   )

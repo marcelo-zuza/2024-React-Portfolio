@@ -26,12 +26,13 @@ const About = () => {
 
         <animated.div style={{...textRight}} className="col-span-1 text-center md:text-left md:pt-12 fade-in-element third-element text-white
         ">
-            <p className="text-4xl py-2">Faça parte desta Rede Mundial</p>
-            <p className="text-base py-2"><span className="font-bold">Seja você um empreendedor que busca estabelecer sua presença online, uma empresa que deseja renovar seu site corporativo ou um indivíduo em busca de uma página pessoal impressionante,</span> estamos aqui para ajudar. Ofereço soluções sob medida que unem design moderno, funcionalidade eficiente e uma experiência do usuário excepcional.</p>
-            <p className="text-base py-2">Juntos, vamos criar uma homepage que reflete sua visão e alcança seus objetivos online. Comece a sua jornada conosco e descubra como podemos fazer a diferença no mundo digital!</p>
+            <p className="text-4xl py-2">Be part of this World Wide Network.</p>
+            <p className="text-base py-2">Whether you're an entrepreneur looking to establish your online presence, a company seeking to refresh its corporate website, or an individual in search of an impressive personal page, I'm here to help. I offer tailor-made solutions that combine modern design, efficient functionality, and an exceptional user experience.</p>
+            <p className="text-base py-2">
+            Together, we will create a homepage that reflects your vision and achieves your online goals. Start your journey with us and discover how we can make a difference in the digital world!</p>
             <div className="py-4 flex flex-col md:flex-row  md:gap-4 mx-24 md:mx-0">
-                <Link to="/aboutme" className="bg-sky-600 my-4 py-4 px-4 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">Sobre mim</Link>
-                <Link to="/services" className="bg-sky-600 my-4 py-4 px-4 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">Conheça meus serviços</Link>
+                <Link to="/aboutme" className="bg-sky-600 my-4 py-4 px-4 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">About me</Link>
+                <Link to="/services" className="bg-sky-600 my-4 py-4 px-4 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">Services</Link>
             </div>
         </animated.div>
         <div className="fixed bottom-52 right-2 md:bottom-4 md:right-4 z-10">
