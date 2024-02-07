@@ -31,13 +31,13 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2">
             <animated.div style={{...LeftSide}} className="col-span-1">
                 <div className="md:py-24">
-                    <p className="hidden md:block text-center md:text-left text-xl font-extrabold md:text-xl text-white py-0 md:py-0 fade-in-element first-element
+                    <p className="hidden md:block text-center md:text-left text-2xl font-extrabold md:text-xl text-white py-0 md:py-0 fade-in-element first-element
                     ">MARCELO ZUZA <span className='text-sky-600'>WEB & MOBILE</span></p>
                     <div className="fade-in-element second-element  
                     ">
                         <p className="text-center md:text-left text-4xl md:text-7xl text-white py-0 md:py-0">Turn your</p>
                         <p className="text-center md:text-left text-4xl md:text-7xl text-white py-0 md:py-0">business into a</p>
-                        <p className="text-center md:text-left text-4xl md:text-7xl text-sky-600 py-0 md:py-0">a digital reality.</p>
+                        <p className="text-center md:text-left text-4xl md:text-7xl text-sky-600 py-0 md:py-0">digital reality.</p>
                     </div>
 
                     <div className=" fade-in-element third-element
