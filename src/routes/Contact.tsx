@@ -1,4 +1,3 @@
-import Fiverr from '../assets/img/icons/fiverr.png'
 import WhatsApp from '../assets/img/icons/whatsapp.png'
 import ShakingHand from '../assets/img/shaking-cut.jpg'
 import { useSpring, animated } from '@react-spring/web'

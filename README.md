@@ -1,5 +1,5 @@
 # MY personal Portfolio
 
-## React + TypeScript + Vite
+## React + TypeScript + Vite + Tailwind CSS
 ## https://marcelozuza.vercel.app/
 

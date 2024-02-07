@@ -17,11 +17,7 @@ const RightSide: any = useSpring({
     config: { duration: 600 },
 })
 
-const DownUp: any = useSpring({
-    from: { opacity: 0, y: 500 },
-    to: { opacity: 1, y: 0 },
-    config: { duration: 600 },
-})
+
 
   return (
     <div className='py-8 px-4 text-white'>
