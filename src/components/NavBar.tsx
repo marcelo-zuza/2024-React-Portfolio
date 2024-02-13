@@ -30,7 +30,7 @@ const NavBar = () => {
                     <ul className="flex flex-1 justify-end content-center gap-4 text-white">
                         <li><Link className="hover:underline duration-500" to="/">Home</Link></li>
                         <li><Link className="hover:underline duration-500" to="/about">About</Link></li>
-                        <li><Link className="hover:underline duration-500" to="/services">Serviços</Link></li>
+                        <li><Link className="hover:underline duration-500" to="/services">Services</Link></li>
                         <li><Link className="hover:underline duration-500" to="/projects">Projects</Link></li>
                         <li><Link className="hover:underline duration-500" to="/contact">Contact</Link></li>
                         <div className="-my-3">
