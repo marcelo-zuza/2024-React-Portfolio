@@ -1,8 +1,52 @@
 import WhatsApp from '../assets/img/icons/whatsapp.png'
 import ShakingHand from '../assets/img/shaking-cut.jpg'
 import { useSpring, animated } from '@react-spring/web'
+import { useState } from 'react'
+import emailjs from 'emailjs-com'
+
 
 const Contact = () => {
+
+    // Estado para armazenar os valores dos campos do formulário
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [isSuccess, setIsSuccess] = useState(false); // Estado para controlar o sucesso do envio
+  
+  
+    // Função para lidar com o envio do formulário
+    const handleSubmit = (e: any) => {
+      e.preventDefault();
+  
+      // Parâmetros a serem enviados para o serviço de email
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        message: message,
+      };
+  
+      // Enviar email usando a biblioteca emailjs-com
+      emailjs.send(
+        'service_277vnru',      // Substitua pelo seu Service ID do EmailJS
+        'template_0ozxvb9',     // Substitua pelo seu Template ID do EmailJS
+        templateParams,
+        '4aClZYwNhTMBqeAbw'          // Substitua pelo seu User ID do EmailJS
+      )
+      .then((response) => {
+        console.log('Email enviado com sucesso!', response);
+        // Lógica adicional após o envio do email (por exemplo, exibir uma mensagem de sucesso)
+        setIsSuccess(true); // Definir o estado de sucesso como verdadeiro
+  
+      })
+      .catch((error) => {
+        console.error('Erro ao enviar o email:', error);
+      });
+      
+      // Limpar os campos do formulário após o envio
+      setName('');
+      setEmail('');
+      setMessage('');
+    };
 
     const LeftSide: any = useSpring({
         from: { opacity: 0, x: -1500 },
@@ -40,14 +84,16 @@ const Contact = () => {
 
         </div>
         <div className="my-10 grid grid-cols-1 place-items-center">
-                <form className='text-white bg-neutral-900 mx-4 px-8 md:w-1/2 rounded-lg py-4'>
+                <form onSubmit={handleSubmit} className='text-white bg-neutral-900 mx-4 px-8 md:w-1/2 rounded-lg py-4'>
                     <h1 className="text-3xl text-center py-4 md:py-4">EMAIL</h1>
                     <div className="flex flex-col items-center text-black">
                         <input className='w-80 md:w-96 py-2 px-2 rounded-lg my-2' type="text" placeholder='Name' />
                         <input className='w-80 md:w-96 py-2 px-2 rounded-lg my-2' type="email" placeholder='Email adress' />
-                        <input className='w-80 md:w-96 h-32 py-2 px-2 rounded-lg my-2' type="text" placeholder='Message' />
-                        <button className="bg-sky-600 text-white py-2 px-4 text-xl rounded-lg hover:bg-white hover:text-sky-600 duration-500">Enviar</button>
+                        <textarea className='w-80 md:w-96 h-32 py-2 px-2 rounded-lg my-2' placeholder='Message' />
+                        <button type='submit' className="bg-sky-600 text-white py-2 px-4 text-xl rounded-lg hover:bg-white hover:text-sky-600 duration-500">Enviar</button>
                     </div>
+                    {isSuccess && <p style={{ color: 'green' }}>Email enviado com sucesso!</p>}
+
                 </form>
             </div>
     </div>

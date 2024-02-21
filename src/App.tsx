@@ -12,6 +12,10 @@ import NavBar from './components/NavBar'
 import Footer from './components/Index/Footer'
 
 const App = () => {
+
+  
+
+
   return (
     <div className='bg-neutral-950 font-roboto'>
       <BrowserRouter>
