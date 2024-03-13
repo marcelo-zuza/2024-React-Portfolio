@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 // Routes
 import Index from './routes/Index'
-import About from './routes/About'
 import Services from './routes/Services'
 import Projects from './routes/Projects'
 import Contact from './routes/Contact'

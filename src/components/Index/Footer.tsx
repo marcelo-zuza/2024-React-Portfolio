@@ -7,9 +7,9 @@ const Footer = () => {
             <div className="py-2">
                 <img className="h-16" src={MZ} alt="mz" />
             </div>
-            <p className="text-white md:text-xl hover:underline duration-700"><a href="https://www.linkedin.com/company/marcelo-zuza-webdevelopment/"><span className="font-bold text-sky-600">MARCELO ZUZA</span></a></p>
-            <p className="text-white md:text-xl hover:underline duration-700"><a href="https://www.linkedin.com/company/marcelo-zuza-webdevelopment/"><span className="font-bold text-sky-600">Web & Mobile</span></a></p>
-            <p className="text-base text-white">&copy; 2024. All rights reserved  <span className="font-bold">2024</span></p>
+            <p className="text-white md:text-xl hover:underline duration-700"><a href="https://www.linkedin.com/in/marcelo-zuza/"><span className="font-bold text-sky-600">MARCELO ZUZA</span></a></p>
+            <p className="text-white md:text-xl hover:underline duration-700"><a href="https://www.linkedin.com/in/marcelo-zuza/"><span className="font-bold text-sky-600">Web & Mobile</span></a></p>
+            <p className="text-base text-white">&copy; 2024. All rights reserved  <span className="font-bold"></span></p>
         </div>
     </div>
   )
