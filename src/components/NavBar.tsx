@@ -28,11 +28,11 @@ const NavBar = () => {
             <div className="hidden md:block content-center flex-1 text-xl py-6">
                 <nav className="flex flex-1 content center">
                     <ul className="flex flex-1 justify-end content-center gap-4 text-white">
-                        <li><Link className="hover:underline duration-500" to="/">Home</Link></li>
-                        <li><Link className="hover:underline duration-500" to="/about">About</Link></li>
-                        <li><Link className="hover:underline duration-500" to="/services">Services</Link></li>
-                        <li><Link className="hover:underline duration-500" to="/projects">Projects</Link></li>
-                        <li><Link className="hover:underline duration-500" to="/contact">Contact</Link></li>
+                        <li><Link className="hover:underline duration-500" to="/">HOME</Link></li>
+                        <li><Link className="hover:underline duration-500" to="/about">ABOUT</Link></li>
+
+                        <li><Link className="hover:underline duration-500" to="/projects">PROJECTS</Link></li>
+                        <li><Link className="hover:underline duration-500" to="/contact">CONTACT</Link></li>
                         <div className="-my-3">
                             <li><a href="https://github.com/marcelo-zuza" target="_blank" rel="noopener noreferrer"><img className="bg-white h-16 rounded-lg" src={GHLogo} alt="" /></a></li>
                         </div>
@@ -50,7 +50,7 @@ const NavBar = () => {
                                     <ul className="flex flex-col w-full justify-end content-center gap-4 text-white absolute top-20 left-4 bg-neutral-950">
                                         <li><Link onClick={openMenu} className="hover:underline duration-500" to="/">Home</Link></li>
                                         <li><Link onClick={openMenu} className="hover:underline duration-500" to="/about">About</Link></li>
-                                        <li><Link onClick={openMenu} className="hover:underline duration-500" to="/services">Services</Link></li>
+
                                         <li><Link onClick={openMenu} className="hover:underline duration-500" to="/projects">Projects</Link></li>
                                         <li><Link onClick={openMenu} className="hover:underline duration-500" to="/contact">Contact</Link></li>
                                         <div className="-my-3">
