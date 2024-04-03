@@ -42,7 +42,7 @@ const Hero = () => {
 
                     <div className=" fade-in-element third-element
                     ">
-                        <p className="text-center md:text-left text-lg md:text-2xl py-1 md:py-2 text-white">Put your brand on the World Wide Web </p>
+                        <p className="text-center md:text-left text-lg md:text-2xl py-1 md:py-2 text-white">Showcase your brand on the World Wide Web </p>
                         <div className="hidden md:flex flex-1 gap-6">
                             <a href="/about" className="bg-sky-600 border-1 md:py-4 md:px-6 rounded-full border-white  text-white hover:bg-white hover:text-neutral-900 duration-500">See more</a>
                         </div>

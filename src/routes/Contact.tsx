@@ -2,7 +2,7 @@ import WhatsApp from '../assets/img/icons/whatsapp.png'
 import ShakingHand from '../assets/img/shaking-cut.jpg'
 import { useSpring, animated } from '@react-spring/web'
 import { useState } from 'react'
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
 
 
 const Contact = () => {
@@ -15,7 +15,7 @@ const Contact = () => {
   
   
     // Função para lidar com o envio do formulário
-    const handleSubmit = (e: any) => {
+    const handleSubmit = async (e: any) => {
       e.preventDefault();
   
       // Parâmetros a serem enviados para o serviço de email
@@ -25,28 +25,26 @@ const Contact = () => {
         message: message,
       };
   
-      // Enviar email usando a biblioteca emailjs-com
-      emailjs.send(
-        'service_277vnru',      // Substitua pelo seu Service ID do EmailJS
-        'template_0ozxvb9',     // Substitua pelo seu Template ID do EmailJS
-        templateParams,
-        '4aClZYwNhTMBqeAbw'          // Substitua pelo seu User ID do EmailJS
-      )
-      .then((response) => {
+      try {
+        const response = await emailjs.send(
+          'service_yaynm8j',      // Substitua pelo seu Service ID do EmailJS
+          'template_ig52oxm',     // Substitua pelo seu Template ID do EmailJS
+          templateParams,
+          'lalQml-js3JO_XRdO'          // Substitua pelo seu User ID do EmailJS
+        );
         console.log('Email enviado com sucesso!', response);
         // Lógica adicional após o envio do email (por exemplo, exibir uma mensagem de sucesso)
         setIsSuccess(true); // Definir o estado de sucesso como verdadeiro
-  
-      })
-      .catch((error) => {
+      } catch (error) {
         console.error('Erro ao enviar o email:', error);
-      });
-      
-      // Limpar os campos do formulário após o envio
-      setName('');
-      setEmail('');
-      setMessage('');
+      } finally {
+        // Limpar os campos do formulário após o envio
+        setName('');
+        setEmail('');
+        setMessage('');
+      }
     };
+
 
     const LeftSide: any = useSpring({
         from: { opacity: 0, x: -1500 },
